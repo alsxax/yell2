@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('4f5e73434b11e0cd5bd35873a75e787e');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '선물과 메시지를 보냈습니다',
+        description:'',
+        imageUrl:
+          'https://mblogthumb-phinf.pstatic.net/MjAxODAzMjZfNjMg/MDAxNTIyMDU0MzMyNDU1.vHL2WYntO4mVL7nvkbhd9U4p5D25F4PoyCbu8Ccuc6gg.eNQWUddba7_XpMNwT9dboykxxngRwXBdZaWSBhWCIhMg.JPEG.bhc4885/%EB%8F%84%EB%AF%B8%EB%85%B8%ED%94%BC%EC%9E%90_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1_%EA%B8%B0%ED%94%84%ED%8B%B0%EC%BD%98_%EC%BF%A0%ED%8F%B0.jpg?type=w800',
+        link: {
+          mobileWebUrl: ' https://m.etoos.com ',
+          webUrl: ' https://m.etoos.com ',
+        },
+      },
+      social: {
+        likeCount: , //99999가 최대입니다
+        commentCount: , //99999가 최대입니다
+        sharedCount: , //99999가 최대입니다
+      },
+      buttons: [
+        {
+          title: '선물 확인하기',
+          link: {
+            mobileWebUrl: ' https://m.etoos.com ',
+            webUrl: ' https://m.etoos.com ',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
