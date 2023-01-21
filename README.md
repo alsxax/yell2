@@ -26,9 +26,9 @@
         },
       },
       social: {
-        likeCount: 0, //99999가 최대입니다
-        commentCount: 0, //99999가 최대입니다
-        sharedCount: 0, //99999가 최대입니다
+        likeCount: 1, //99999가 최대입니다
+        commentCount: 1, //99999가 최대입니다
+        sharedCount: 1, //99999가 최대입니다
       },
       buttons: [
         {
