@@ -13,28 +13,26 @@
   />
 </a>
 <script type="text/javascript">
- Kakao.init('4f5e73434b11e0cd5bd35873a75e787e');
+ Kakao.init('3857e43b325f0de68a3db9ffd2230c00');
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '선물과 메시지를 보냈습니다',
-        description: '"ㅎㅇ"',
+        title: '선착순 게임을 시작합니다! 기회는 단 10분간, 선착순 5명에게!',
+        description: '',
         imageUrl:
-          'https://mblogthumb-phinf.pstatic.net/MjAyMjAxMzFfNzUg/MDAxNjQzNjAzODY4Njgz.3W2tbeaRPcJyYRBZ1lBJxr8dxwakwvI8KNZNwKfTcp8g.TXuC2BmjbaXbdDy-PLoE7-nr3q8iJ0oP455pWAa4-A4g.JPEG.superpig518/1643603485363.jpg?type=w800',
-        link: {
-          mobileWebUrl: ' https://m.etoos.com ',
+          'https://kakao-nacksee.vercel.app/_next/image?url=%2Fimages%2FgiftTitle.png&w=640&q=75'
           webUrl: 'https://m.etoos.com ',
         },
       },
       social: {
-        likeCount: 2435, //99999가 최대입니다
+        likeCount: 0, //99999가 최대입니다
         commentCount: 0, //99999가 최대입니다
-        sharedCount: 9657, //99999가 최대입니다
+        sharedCount: 0, //99999가 최대입니다
       },
       buttons: [
         {
-          title: '선물 확인하기',
+          title: '당첨자 확인하기',
           link: {
             mobileWebUrl: ' https://m.etoos.com ',
             webUrl: ' https://m.etoos.com ',
